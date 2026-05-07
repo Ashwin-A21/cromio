@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cromio | Luxury Sanitaryware India | Pure Prestige</title>
+    <meta name="description" content="Cromio defines pure prestige in luxury sanitaryware. Discover premium bath fittings, designer faucets, and modern bathroom collections for India's most distinguished residences.">
+    <meta name="keywords" content="luxury sanitaryware india, premium bath fittings india, designer faucets india, cromio sanitaryware, luxury bathroom design, high-end toilets india, premium washbasins, modern luxury bathrooms, architectural bath fittings, cromio collection, luxury home decor india, bespoke bathroom solutions, luxury bathrooms Mumbai, luxury bathrooms Delhi, premium sanitaryware Bangalore, designer bath fittings Hyderabad, luxury faucets Chennai, high-end showers Kolkata, premium toilets Pune, luxury bathroom renovation India, designer washbasins, gold plated faucets, marble bathroom accessories, smart toilets India, eco-friendly luxury bathrooms, water saving premium faucets, architectural bathroom solutions, interior designer bathroom choice, 5-star hotel bathroom fittings India, luxury villa bath fittings, elite residence bathrooms, Cromio India, Cromio prestigious collection, modern minimalist bathrooms, Italian design bathrooms India, European luxury sanitaryware, high-performance bath systems, bespoke wellness spaces, luxury spa bathrooms, premium wellness India, Cromio luxury faucets, Cromio designer toilets, Cromio shower systems, high-end bathroom accessories, modern bathroom technology, luxury hardware india, premium interior fittings">
+    <link rel="canonical" href="https://cromio.in/" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Cromio",
+      "url": "https://cromio.in",
+      "logo": "https://cromio.in/cromio.png",
+      "description": "Cromio defines pure prestige in luxury sanitaryware, providing premium bath fittings and designer solutions for distinguished residences in India.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": "English"
+      }
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cromio.in/">
+    <meta property="og:title" content="Cromio | Luxury Sanitaryware India | Pure Prestige">
+    <meta property="og:description" content="Redefining luxury in Indian residences with the most distinguished collection of premium sanitaryware.">
+    <meta property="og:image" content="https://cromio.in/cromio.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cromio.in/">
+    <meta property="twitter:title" content="Cromio | Luxury Sanitaryware India | Pure Prestige">
+    <meta property="twitter:description" content="Redefining luxury in Indian residences with the most distinguished collection of premium sanitaryware.">
+    <meta property="twitter:image" content="https://cromio.in/cromio.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #0a0a0a;
+            --light: #f8f8f8;
+            --gray: #1a1a1a;
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--dark); 
+            color: var(--light);
+            margin: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            cursor: none;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Custom Cursor Logic */
+        #cursor-dot, #cursor-outline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            will-change: transform;
+        }
+
+        #cursor-dot {
+            width: 5px;
+            height: 5px;
+            background: var(--gold);
+        }
+
+        #cursor-outline {
+            width: 36px;
+            height: 36px;
+            border: 1px solid rgba(197, 160, 89, 0.4);
+            transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1), height 0.4s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.4s;
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(90deg, #9a7b45, #f9e6b3, #9a7b45);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+            display: inline-block;
+            padding: 0.1em 0.05em;
+            vertical-align: middle;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .active .reveal-up {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Input & Button UI */
+        .input-luxury {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.5s ease;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .input-luxury:focus {
+            outline: none;
+            border-bottom-color: var(--gold);
+            padding-bottom: 12px;
+        }
+
+        .btn-premium {
+            position: relative;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            font-size: 9px;
+            letter-spacing: 0.3em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--light);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+        }
+
+        .btn-premium:hover {
+            border-color: var(--gold);
+            color: #fff;
+            letter-spacing: 0.4em;
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(197, 160, 89, 0.2);
+        }
+
+        /* The Glimmer Sweep */
+        .btn-premium::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -100%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(
+                to right, 
+                transparent, 
+                rgba(197, 160, 89, 0),
+                rgba(197, 160, 89, 0.3),
+                rgba(255, 255, 255, 0.5),
+                rgba(197, 160, 89, 0.3),
+                rgba(197, 160, 89, 0),
+                transparent
+            );
+            transform: rotate(35deg);
+            transition: all 0s;
+            opacity: 0;
+            filter: blur(2px);
+            z-index: 2;
+        }
+
+        .btn-premium:hover::after {
+            left: 150%;
+            transition: all 0.9s ease-in-out;
+            opacity: 1;
+        }
+        
+        @media (max-width: 1024px) {
+            body { cursor: auto; overflow-y: auto; }
+            #cursor-dot, #cursor-outline { display: none; }
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 px-6 md:px-16 py-8 flex justify-between items-center bg-transparent">
+        <div class="h-6 md:h-10 flex items-center">
+            <img src="cromio.png" alt="Cromio Luxury" class="h-full w-auto object-contain block" id="main-logo" onerror="this.classList.add('hidden'); document.getElementById('logo-fallback').classList.remove('hidden');">
+            
+            <h1 id="logo-fallback" class="hidden text-lg md:text-xl font-light tracking-[0.5em] uppercase">
+                Cromio<span class="text-[#c5a059]">.</span>
+            </h1>
+        </div>
+        <div class="text-[8px] md:text-[9px] tracking-[0.5em] uppercase opacity-50 text-right font-medium text-white">
+            Exclusively India
+        </div>
+    </header>
+
+    <main class="relative flex-grow w-full flex flex-col items-center justify-center overflow-hidden">
+        
+        <!-- Background Layer -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000')] bg-cover bg-center grayscale opacity-20 scale-105" id="hero-bg"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 text-center px-6 w-full max-w-4xl" id="reveal-container">
+            
+            <h2 class="text-[8px] md:text-[10px] font-semibold tracking-[0.6em] uppercase opacity-40 mb-6 reveal-up" style="transition-delay: 0.2s;">
+                Beyond the Ordinary
+            </h2>
+
+            <h3 class="text-4xl sm:text-6xl md:text-8xl font-normal tracking-tight leading-tight mb-10 reveal-up" style="transition-delay: 0.4s;">
+                Pure <span class="gold-shimmer">Prestige</span>
+            </h3>
+
+            <!-- Countdown Grid -->
+            <div class="flex gap-4 sm:gap-8 md:gap-12 justify-center items-center my-12 reveal-up" style="transition-delay: 0.6s;">
+                <div class="flex flex-col items-center">
+                    <div id="days" class="font-cinzel text-3xl sm:text-4xl md:text-6xl font-normal tracking-tighter">00</div>
+                    <div class="text-[7px] tracking-[0.3em] uppercase opacity-30 mt-3">Days</div>
+                </div>
+                <div class="w-[1px] h-8 bg-white/10"></div>
+                <div class="flex flex-col items-center">
+                    <div id="hours" class="font-cinzel text-3xl sm:text-4xl md:text-6xl font-normal tracking-tighter">00</div>
+                    <div class="text-[7px] tracking-[0.3em] uppercase opacity-30 mt-3">Hours</div>
+                </div>
+                <div class="w-[1px] h-8 bg-white/10"></div>
+                <div class="flex flex-col items-center">
+                    <div id="minutes" class="font-cinzel text-3xl sm:text-4xl md:text-6xl font-normal tracking-tighter">00</div>
+                    <div class="text-[7px] tracking-[0.3em] uppercase opacity-30 mt-3">Minutes</div>
+                </div>
+                <div class="w-[1px] h-8 bg-white/10"></div>
+                <div class="flex flex-col items-center">
+                    <div id="seconds" class="font-cinzel text-3xl sm:text-4xl md:text-6xl font-normal tracking-tighter text-[#c5a059]/80">00</div>
+                    <div class="text-[7px] tracking-[0.3em] uppercase opacity-30 mt-3">Seconds</div>
+                </div>
+            </div>
+
+            <!-- Interaction Block -->
+            <div class="reveal-up mt-8" style="transition-delay: 0.8s;">
+                <p class="text-[9px] tracking-[0.25em] uppercase opacity-40 mb-10 max-w-xs md:max-w-md mx-auto leading-relaxed">
+                    Cromio arrives to transform the most distinguished residences in India. <br class="hidden md:block"> Secure your status for the inaugural collection launch.
+                </p>
+                
+                <form id="waitlist-form" class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 max-w-lg mx-auto">
+                    <input type="email" placeholder="YOUR EMAIL" class="input-luxury w-full sm:w-64 py-3 text-center placeholder:opacity-30 text-white" required>
+                    <button type="submit" class="btn-premium px-10 py-3 rounded-full w-full sm:w-auto">
+                        <span class="relative z-10">Secure Early Access</span>
+                    </button>
+                </form>
+
+                <div id="status-container" class="h-10 mt-6 overflow-hidden opacity-0 transition-opacity duration-500">
+                    <p id="form-status" class="text-[8px] tracking-[0.2em] uppercase text-[#c5a059] translate-y-full transition-transform duration-700 font-semibold py-2">
+                        Confirmed. You are among the first to witness the evolution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 w-full py-8 text-center z-20">
+        <p class="text-[7px] tracking-[0.5em] uppercase opacity-20">© 2026 The Cromio Collection | India</p>
+    </footer>
+
+    <script>
+        const dot = document.getElementById('cursor-dot');
+        const outline = document.getElementById('cursor-outline');
+        const bg = document.getElementById('hero-bg');
+
+        let mouseX = 0, mouseY = 0;
+        let dotX = 0, dotY = 0;
+        let outlineX = 0, outlineY = 0;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            dotX += (mouseX - dotX) * 0.2;
+            dotY += (mouseY - dotY) * 0.2;
+            dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
+
+            outlineX += (mouseX - outlineX) * 0.12;
+            outlineY += (mouseY - outlineY) * 0.12;
+            outline.style.transform = `translate3d(${outlineX}px, ${outlineY}px, 0) translate(-50%, -50%)`;
+
+            const moveX = (mouseX - window.innerWidth / 2) * 0.005;
+            const moveY = (mouseY - window.innerHeight / 2) * 0.005;
+            bg.style.transform = `scale(1.05) translate3d(${moveX}px, ${moveY}px, 0)`;
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        function updateTimer() {
+            const now = new Date();
+            const targetDate = new Date(2026, 5, 1); // Set target to June 2026
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                document.querySelectorAll('#days, #hours, #minutes, #seconds').forEach(el => el.innerText = "00");
+                return;
+            }
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const m = Math.floor((diff / 1000 / 60) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('days').innerText = d.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = h.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = m.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = s.toString().padStart(2, '0');
+        }
+
+
+        window.onload = () => {
+            document.getElementById('reveal-container').classList.add('active');
+            
+            if (window.innerWidth > 1024) {
+                animateCursor();
+            }
+            setInterval(updateTimer, 1000);
+            updateTimer();
+
+            const interactive = document.querySelectorAll('button, a, input');
+            interactive.forEach(el => {
+                el.onmouseenter = () => {
+                    outline.style.width = '60px';
+                    outline.style.height = '60px';
+                    outline.style.background = 'rgba(197, 160, 89, 0.05)';
+                    outline.style.borderColor = 'var(--gold)';
+                };
+                el.onmouseleave = () => {
+                    outline.style.width = '36px';
+                    outline.style.height = '36px';
+                    outline.style.background = 'transparent';
+                    outline.style.borderColor = 'rgba(197, 160, 89, 0.4)';
+                };
+            });
+        };
+
+        document.getElementById('waitlist-form').onsubmit = (e) => {
+            e.preventDefault();
+            const container = document.getElementById('status-container');
+            const status = document.getElementById('form-status');
+            
+            container.style.opacity = '1';
+            setTimeout(() => {
+                status.style.transform = 'translateY(0)';
+            }, 50);
+
+            e.target.style.opacity = '0.2';
+            e.target.style.pointerEvents = 'none';
+        }
+    </script>
+</body>
+</html>
